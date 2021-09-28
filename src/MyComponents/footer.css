@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Allura&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css");
+footer{
+    background-color: gray;
+    text-align: center;
+    padding: 2%;
+}
+.brand-name>h2>a{
+    color: white;
+    font-family: 'Allura' ,cursive;
+    font-size: 80px;
+}
+.social>h3>a{
+    font-size: 30px;
+    color: white;
+}
+

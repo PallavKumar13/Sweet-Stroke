@@ -1,0 +1,23 @@
+.app {
+    /* The image used */
+    background-image: url("./MyComponents/Img/wall.jpg");
+    /* Full height */
+    height: 100%; 
+    
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    position: relative;
+  }
+  img.sweety-icon{
+    width: auto;
+    max-width: 15%;
+    height: auto;
+    max-height: 15%;
+    position: fixed;
+    bottom: 5%;
+    left: 5%;
+    z-index: 3;
+  }

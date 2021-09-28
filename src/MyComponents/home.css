@@ -1,0 +1,191 @@
+/* Gallery font */
+@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+/* Photo name font */
+@import url('https://fonts.googleapis.com/css2?family=Bonheur+Royale&display=swap');
+/* Model image Des font */
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Ephesis&family=Play&display=swap');
+/* Arist font name */
+@import url('https://fonts.googleapis.com/css2?family=Cherish&display=swap');
+
+.gallery-name>h1{
+    padding: 5%;
+    text-align: center;
+    font-size: 200px;
+    text-shadow: 10px 10px 20px black;
+    -webkit-text-stroke: 4px turquoise;
+    color: white;
+    font-family: 'Shadows Into Light', cursive;
+}
+.gallery{
+    column-count: 3;
+    display: block;
+    padding: 1%;
+}
+.photo-des{
+    margin: 5%;
+    display: inline-block;
+    text-align: center;
+    border: 5px solid white;
+}
+img.photo{
+    width: 100%;
+    padding: 1%;
+    border: 5px solid white;
+    cursor: pointer;
+    display: inline;
+}
+div.photo-name{
+    color: black;
+    background-color: white;
+    margin: 0;
+    padding: 2%;
+    width: 100%;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: 'Bonheur Royale', cursive;
+}
+div.painting{
+    display: none;
+}
+div.color{
+    display: none;
+}
+div.paper{
+    display: none;
+}
+.model{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 40px;
+    overflow: hidden;
+    display: flex;
+    background-color: rgba(0,0, 0, 0.8);
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    z-index: 1;
+    visibility: hidden;
+}
+.model.open{
+    visibility: visible;
+}
+img.modelimage{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+    line-height: 0;
+    box-sizing: border-box;
+    margin: 0 0 0 auto;
+    border: 3px solid white;
+    box-shadow: 0 0 20px lightcoral;
+}
+div.image-des{
+    position: relative;
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+    margin: 0 auto 0 0;
+    padding: 10px;
+    color: black;
+    background-color: rgba(255, 255, 255, 0.582);
+}
+.modelphoto-name{
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Merienda', cursive;
+}
+.modelpainting{
+    font-size: 17px;
+    font-family: 'Play', sans-serif;
+}
+span#paintingtype{
+    font-weight: bold;
+}
+.modelpapertype{
+    font-size: 17px;
+    font-family: 'Play', sans-serif;
+}
+span#papertype{
+    font-weight: bold;
+}
+span#colors{
+    font-weight: bold;
+}
+.modelcolor{
+    font-size: 17px;
+    font-family: 'Play', sans-serif;
+}
+.artist{
+    position: absolute;
+    color: blue;
+    bottom: 5%;
+    right: 10%;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Cherish', cursive;
+}
+.close{
+    width:40px;
+    height: 40px;
+    font-weight: bold;
+    border: 2px solid white;
+    border-radius: 5px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+@media  only screen and (max-width: 1400px){
+    .gallery{
+        column-count: 2;
+        display: block;
+        padding: 1%;
+    }
+    .gallery-name>h1{
+        font-size: 100px;
+    }
+}
+@media  only screen and (max-width: 700px){   
+.gallery{
+    column-count: 1;
+    display: block;
+    padding: 1%;
+}
+.gallery-name>h1{
+    font-size: 100px;
+    -webkit-text-stroke: 2px turquoise;
+}
+img.modelimage{
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    max-height: 100%;
+    display: block;
+    line-height: 0;
+    box-sizing: border-box;
+}
+img.modelimage{
+    display: none;
+}
+div.image-des{
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.747);
+}
+.artist{
+    bottom: 5%;
+    right: 5%;
+}
+}
